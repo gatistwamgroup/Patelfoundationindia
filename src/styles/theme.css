@@ -1,0 +1,85 @@
+:root {
+  /* =========================
+     COLOR SYSTEM
+  ========================= */
+  --color-primary: #D72638;
+  --color-primary-dark: #B91C1C;
+  --color-primary-light: #FDE8EA;
+
+  --color-dark: #111827;
+  --color-dark-2: #1F2937;
+  --color-dark-3: #374151;
+
+  --color-white: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F3F4F6;
+  --color-surface-muted: #EEF2F7;
+
+  --color-text: #1F2937;
+  --color-text-soft: #6B7280;
+  --color-text-muted: #9CA3AF;
+
+  --color-border: rgba(17, 24, 39, 0.08);
+  --color-border-strong: rgba(17, 24, 39, 0.14);
+
+  --color-gold: #C8A96B;
+  --color-gold-soft: #F5E9D4;
+
+  --color-teal: #0F766E;
+  --color-teal-soft: #DDF6F2;
+
+  --color-success: #15803D;
+  --color-warning: #D97706;
+
+  /* =========================
+     TYPOGRAPHY
+     Change later from here only
+  ========================= */
+  --font-heading: 'DM Serif Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* =========================
+     FONT SIZES
+  ========================= */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+  --text-5xl: clamp(3rem, 7vw, 6.5rem);
+
+  /* =========================
+     SPACING SYSTEM
+  ========================= */
+  --section-space: clamp(4rem, 8vw, 8rem);
+  --section-space-sm: clamp(3rem, 6vw, 5rem);
+  --container-width: 1400px;
+  --container-narrow: 1100px;
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --radius-pill: 999px;
+
+  /* =========================
+     SHADOWS
+  ========================= */
+  --shadow-soft: 0 10px 30px rgba(17, 24, 39, 0.08);
+  --shadow-card: 0 20px 50px rgba(17, 24, 39, 0.08);
+  --shadow-premium: 0 24px 80px rgba(17, 24, 39, 0.12);
+  --shadow-button: 0 10px 24px rgba(215, 38, 56, 0.22);
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  --transition-base: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+}

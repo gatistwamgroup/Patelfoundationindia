@@ -1,0 +1,224 @@
+.leadership-preview-section {
+  position: relative;
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 30%),
+    radial-gradient(circle at left center, rgba(200, 169, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  overflow: hidden;
+}
+
+.leadership-preview-section.compact {
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+}
+
+.leadership-preview-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+}
+
+.leadership-preview-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(215, 38, 56, 0.08);
+  border: 1px solid rgba(215, 38, 56, 0.12);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.leadership-preview-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.leadership-preview-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.leadership-preview-description {
+  margin: 0 auto;
+  max-width: 720px;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.leadership-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.leadership-preview-section.compact .leadership-preview-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.leadership-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(17, 24, 39, 0.10);
+}
+
+.leadership-card-featured {
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 35%),
+    linear-gradient(180deg, #ffffff 0%, #fff8f9 100%);
+  box-shadow: var(--shadow-premium);
+}
+
+.leadership-card-image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.leadership-card:hover .leadership-card-image {
+  transform: scale(1.04);
+}
+
+.leadership-card-role-chip {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.10);
+}
+
+.leadership-card-content {
+  padding: 1.2rem 1.1rem 1.25rem;
+}
+
+.leadership-card-name {
+  margin: 0 0 0.55rem;
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.leadership-card-bio {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.leadership-preview-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: clamp(1.2rem, 3vw, 1.5rem);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(215, 38, 56, 0.05) 0%, rgba(200, 169, 107, 0.08) 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.leadership-preview-note {
+  display: flex;
+  align-items:  center;
+  gap: 0.9rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.leadership-preview-note-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 18px;
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.leadership-preview-note p {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: 0.98rem;
+  line-height: 1.75;
+  font-weight: 600;
+}
+
+.leadership-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .leadership-preview-grid,
+  .leadership-preview-section.compact .leadership-preview-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .leadership-preview-section,
+  .leadership-preview-section.compact {
+    padding: clamp(3rem, 6vw, 4rem) 0;
+  }
+
+  .leadership-preview-grid,
+  .leadership-preview-section.compact .leadership-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-card-image {
+    height: 100%;
+  }
+
+  .leadership-preview-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .leadership-preview-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}

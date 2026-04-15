@@ -1,0 +1,112 @@
+.volunteer-intro-section {
+  position: relative;
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background:
+    radial-gradient(circle at top left, rgba(215, 38, 56, 0.05), transparent 30%),
+    radial-gradient(circle at right center, rgba(200, 169, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  overflow: hidden;
+}
+
+.volunteer-intro-header {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+}
+
+.volunteer-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(215, 38, 56, 0.08);
+  border: 1px solid rgba(215, 38, 56, 0.12);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.volunteer-intro-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.volunteer-intro-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.volunteer-intro-description {
+  margin: 0 auto;
+  max-width: 720px;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.volunteer-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.volunteer-intro-card {
+  padding: 1.3rem 1.2rem;
+  border-radius: 26px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.volunteer-intro-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.10);
+}
+
+.volunteer-intro-icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  border-radius: 20px;
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  margin-bottom: 1rem;
+}
+
+.volunteer-intro-card-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  color: var(--color-dark);
+  line-height: 1.25;
+}
+
+.volunteer-intro-card-description {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 992px) {
+  .volunteer-intro-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteer-intro-section {
+    padding: clamp(3rem, 6vw, 4rem) 0;
+  }
+}
