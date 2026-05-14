@@ -174,7 +174,7 @@ const DonationFormSection = () => {
       source: "INDIA",
     };
 
-    console.log("Final India Payload (Intl):", payload);
+
 
     const response = await fetch(PAYPAL_API_URL, {
       method: "POST",
@@ -293,7 +293,7 @@ const DonationFormSection = () => {
         source: "INDIA",
       };
 
-      console.log("Final India Payload (India):", payload);
+
 
       const response = await fetch(INDIA_API_URL, {
         method: "POST",

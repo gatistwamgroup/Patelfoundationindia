@@ -12,7 +12,7 @@ const PageHero = ({
   primaryBtnHref = "/donate",
   secondaryBtnText = "Contact Us",
   secondaryBtnHref = "/contact",
-  image = "/images/home/donation-cta.jpg",
+  image = "/images/home/donation-cta.webp",
   stats = [
     { value: "500+", label: "Children Supported", type: "primary" },
     { value: "120+", label: "Education Kits", type: "gold" },

@@ -71,4 +71,16 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://mypatelfoundation.in/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://mypatelfoundation.in/terms-of-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

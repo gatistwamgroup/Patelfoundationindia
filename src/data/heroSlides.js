@@ -6,7 +6,7 @@ export const heroSlides = [
     highlight: "Lasting Change",
     description:
       "Support education, healthcare, and sustainable livelihood initiatives that transform lives with transparency and compassion.",
-    image: "/images/hero/hero-1.jpg",
+    image: "/images/hero/hero-1.webp",
     primaryBtn: {
       text: "Donate Now",
       href: "/donate",
@@ -28,7 +28,7 @@ export const heroSlides = [
     highlight: "Hope",
     description:
       "Your support helps children access education, books, digital tools, and brighter futures.",
-    image: "/images/hero/hero-2.jpg",
+    image: "/images/hero/hero-2.webp",
     primaryBtn: {
       text: "Sponsor a Child",
       href: "/donate",

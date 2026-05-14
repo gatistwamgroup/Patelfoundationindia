@@ -122,7 +122,7 @@ const Navbar = () => {
     }));
   };
 
-  const currentLogo = isOverlay ? "/logo-light.png" : "/logo-dark.png";
+  const currentLogo = isOverlay ? "/logo-light.webp" : "/logo-dark.webp";
 
   return (
     <>
@@ -317,7 +317,7 @@ const Navbar = () => {
                   }}
                 >
                   <img
-                    src="/logo-dark.png"
+                    src="/logo-dark.webp"
                     alt="Patel Foundation"
                     className="mobile-drawer-logo"
                   />
@@ -451,7 +451,7 @@ const Navbar = () => {
                       href={item.href}
                       aria-label={item.label}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="mobile-social-link"
                     >
                       {item.icon}
@@ -462,7 +462,7 @@ const Navbar = () => {
 
               {/* CTA */}
               <div style={{ marginTop: "auto", paddingTop: "1rem" }}>
-                <PremiumButton href="/donate" className="mobile-full-btn">
+                <PremiumButton href="/donate" className="mobile-full-btn" onClick={() => setIsOpen(false)}>
                   Make a Donation
                 </PremiumButton>
               </div>

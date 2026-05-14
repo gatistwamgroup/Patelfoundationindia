@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/logo-loader.css";
-import logo from "/loader-logo.png"; // <-- apna path set karo
+import logo from "/loader-logo.webp"; // <-- apna path set karo
 
 export default function LogoLoader() {
   return (

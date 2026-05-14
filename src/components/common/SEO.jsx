@@ -5,7 +5,8 @@ export default function SEO({
   description,
   keywords = "",
   url = "https://mypatelfoundation.in/",
-  image = "https://mypatelfoundation.in/og-image.jpg",
+  image = "https://mypatelfoundation.in/og-image.webp",
+
 }) {
   return (
     <Helmet>

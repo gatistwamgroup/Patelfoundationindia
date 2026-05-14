@@ -5,6 +5,8 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import LogoLoader from "./components/loader/LogoLoader";
 import { Toaster } from "react-hot-toast";
+import CookieConsent from "./components/common/CookieConsent";
+import BackToTop from "./components/common/BackToTop";
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -21,6 +23,9 @@ import NotFoundPage from "./pages/NotFoundPage";
 import DonationSuccess from "./pages/DonationSuccess";
 import IndiaDonationSuccess from "./pages/IndiaDonationSuccess";
 import DonationCancel from "./pages/DonationCancel";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import TermsOfServicePage from "./pages/TermsOfServicePage";
+
 
 import { initGA, trackPageView } from "./utils/analytics";
 
@@ -58,6 +63,8 @@ function AppContent() {
       <ScrollToTop />
       <AnalyticsTracker />
       <Toaster position="top-right" reverseOrder={false} />
+      <CookieConsent />
+      <BackToTop />
       <Navbar />
 
       <Routes>
@@ -76,6 +83,9 @@ function AppContent() {
         <Route path="/donation-success" element={<DonationSuccess />} />
         <Route path="/donation-success-india" element={<IndiaDonationSuccess />} />
         <Route path="/donation-cancel" element={<DonationCancel />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+
       </Routes>
 
       <Footer />

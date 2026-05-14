@@ -15,7 +15,7 @@ const ContactUsPage = () => {
         description="Contact Patel Foundation to volunteer, donate, collaborate, or learn more about our mission to support children and communities through impactful social initiatives."
         keywords="contact Patel Foundation, NGO contact, donate NGO, volunteer NGO, charity contact India"
         url="https://mypatelfoundation.in/contact"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Contact Us"
@@ -26,7 +26,7 @@ const ContactUsPage = () => {
         primaryBtnHref="#contact-form"
         secondaryBtnText="Support Our Mission"
         secondaryBtnHref="/donate"
-        image="/images/contact/contact-hero.jpg"
+        image="/images/contact/contact-hero.webp"
       />
 
       <ContactInfoSection />

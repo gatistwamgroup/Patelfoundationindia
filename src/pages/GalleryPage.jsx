@@ -12,7 +12,7 @@ const GalleryPage = () => {
         description="Explore the Patel Foundation gallery and witness inspiring moments of hope, education, care, social activities, and community impact through our initiatives and events."
         keywords="Patel Foundation gallery, NGO gallery, charity event photos, social impact images, NGO activities gallery"
         url="https://mypatelfoundation.in/gallery"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Our Gallery"
@@ -23,7 +23,7 @@ const GalleryPage = () => {
         primaryBtnHref="#gallery-content"
         secondaryBtnText="Support Our Mission"
         secondaryBtnHref="/donate"
-        image="/images/gallery/gallery-hero.jpg"
+        image="/images/gallery/gallery-hero.webp"
       />
 
       <div id="gallery-content">

@@ -14,9 +14,9 @@ import {
 
 // Only images slider data
 const heroImages = [
-  "/images/hero/hero-1.jpg",
-  "/images/hero/hero-2.jpg",
-  "/images/hero/hero-3.jpg",
+  "/images/hero/hero-1.webp",
+  "/images/hero/hero-2.webp",
+  "/images/hero/hero-3.webp",
 ];
 
 const HeroSection = () => {

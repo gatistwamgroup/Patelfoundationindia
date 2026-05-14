@@ -12,7 +12,7 @@ const AboutIntroSection = () => {
           <div className="about-intro-visual">
             <div className="about-intro-main-image-wrap">
               <img
-                src="/images/about/about-intro-main.jpg"
+                src="/images/about/about-intro-main.webp"
                 alt="Patel Foundation community support"
                 className="about-intro-main-image"
               />
@@ -32,7 +32,7 @@ const AboutIntroSection = () => {
 
             <div className="about-intro-side-image-wrap">
               <img
-                src="/images/about/about-intro-side.jpg"
+                src="/images/about/about-intro-side.webp"
                 alt="Children education support"
                 className="about-intro-side-image"
               />

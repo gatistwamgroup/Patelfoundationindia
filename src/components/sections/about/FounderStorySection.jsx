@@ -83,7 +83,7 @@ const FounderStorySection = () => {
           <div className="founder-story-visual">
             <div className="founder-photo-card">
               <img
-                src="/images/about/founder-monika-patel.jpg"
+                src="/images/team/Monica.webp"
                 alt="Monika Patel - Founder of Patel Foundation"
                 className="founder-photo-image"
               />

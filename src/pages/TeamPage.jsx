@@ -15,7 +15,7 @@ const TeamPage = () => {
         description="Meet the passionate team behind Patel Foundation who work tirelessly to create positive social impact through child welfare, education, health, and community support programs."
         keywords="Patel Foundation team, NGO team, social workers, child welfare team, charity organization team"
         url="https://mypatelfoundation.in/team"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Meet Our Team"
@@ -26,7 +26,7 @@ const TeamPage = () => {
         primaryBtnHref="/contact"
         secondaryBtnText="Support Our Mission"
         secondaryBtnHref="/donate"
-        image="/images/team/team-hero.jpg"
+        image="/images/team/team-hero.webp"
       />
 
       <TeamGridSection />

@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="footer-brand-col">
             <Link to="/" className="footer-logo-link" aria-label="Patel Foundation Home">
               <img
-                src="/logo-light.png"
+                src="/logo-light.webp"
                 alt="Patel Foundation"
                 className="footer-logo"
               />
@@ -58,16 +58,16 @@ const Footer = () => {
             </p>
 
             <div className="footer-socials">
-              <a href="https://www.instagram.com/patelfoundation_borsad/" aria-label="Instagram" className="footer-social-link">
+              <a href="https://www.instagram.com/patelfoundation_borsad/" aria-label="Instagram" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <FiInstagram />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61574684506372" aria-label="Facebook" className="footer-social-link">
+              <a href="https://www.facebook.com/profile.php?id=61574684506372" aria-label="Facebook" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <FiFacebook />
               </a>
-              <a href="https://www.youtube.com/@PatelFoundationBorsad" aria-label="YouTube" className="footer-social-link">
+              <a href="https://www.youtube.com/@PatelFoundationBorsad" aria-label="YouTube" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <FiYoutube />
               </a>
-              <a href="https://www.linkedin.com/in/patel-foundation-ind-8836473aa/" aria-label="LinkedIn" className="footer-social-link">
+              <a href="https://www.linkedin.com/in/patel-foundation-ind-8836473aa/" aria-label="LinkedIn" className="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <FiLinkedin />
               </a>
             </div>
@@ -78,7 +78,7 @@ const Footer = () => {
             <h3 className="footer-col-title">Who We Are</h3>
             <ul className="footer-links-list">
               <li>
-                <Link to="/about-us">About Us</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link to="/team">Meet Our Team</Link>
@@ -141,7 +141,12 @@ const Footer = () => {
                 </div>
                  <div>
                   <p className="footer-contact-label">Location</p>
-                  <a href="#" className="footer-contact-link">
+                  <a 
+                    href="https://maps.google.com/?q=Kavitha,Borsad,Anand,Gujarat,388545" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="footer-contact-link"
+                  >
                     Near Milk Dairy, Kavitha, Borsad, Anand Pincode - 388545.
                   </a>
                 </div>
@@ -178,7 +183,7 @@ const Footer = () => {
         {/* Bottom Strip */}
         <div className="footer-bottom-strip">
           <p className="footer-bottom-copy">
-            Designed by <a href="https://gatistwamgroup.com/" className="Gatistwam">
+            Designed by <a href="https://gatistwamgroup.com/" className="Gatistwam" target="_blank" rel="noopener noreferrer">
                     Gatistwam
                   </a>
           </p>
@@ -187,12 +192,15 @@ const Footer = () => {
           </p>
 
           <div className="footer-bottom-links">
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <span className="footer-divider" />
+            <Link to="/terms-of-service">Terms of Service</Link>
+            <span className="footer-divider" />
             <Link to="/legal-documents">Legal Documents</Link>
             <span className="footer-divider" />
             <Link to="/contact">Contact</Link>
-            <span className="footer-divider" />
-            <Link to="/donate">Donate</Link>
           </div>
+
         </div>
       </Container>
     </footer>

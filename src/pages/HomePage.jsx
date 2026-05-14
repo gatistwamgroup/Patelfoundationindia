@@ -20,7 +20,7 @@ const HomePage = () => {
         description="Patel Foundation is dedicated to supporting underprivileged children through education, health, nutrition, and social welfare initiatives. Join us to create a better future."
         keywords="Patel Foundation, NGO for children, child education NGO, child health NGO, child nutrition NGO, donate NGO, volunteer NGO, charity foundation India"
         url="https://mypatelfoundation.in/"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <HeroSection />
       <WhoWeAreSection />

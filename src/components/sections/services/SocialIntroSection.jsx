@@ -12,7 +12,7 @@ const SocialIntroSection = () => {
           <div className="social-intro-visual">
             <div className="social-image-shell">
               <img
-                src="/images/social/social-intro.jpg"
+                src="/images/social/social-intro.webp"
                 alt="Social Activity Support"
                 className="social-main-image"
               />

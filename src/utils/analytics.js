@@ -1,4 +1,4 @@
-const MEASUREMENT_ID = "G-RJ9JGL19R9"; // 👈 apna real GA4 ID daalo
+const MEASUREMENT_ID = import.meta.env.VITE_GA_ID;
 
 export const initGA = () => {
   if (!window.gtag || !MEASUREMENT_ID) return;
@@ -23,4 +23,4 @@ export const trackEvent = (action, category, label = "") => {
     event_category: category,
     event_label: label,
   });
-};
+};

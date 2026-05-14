@@ -91,7 +91,7 @@ const IndiaPaymentForm = ({
             <h4 className="india-info-title">Scan QR to Donate</h4>
             <div className="india-qr-wrap">
               <img
-                src="/images/donate/india-donation-qr.jpg"
+                src="/images/donate/india-donation-qr.webp"
                 alt="India Donation QR Code"
                 className="india-qr-image"
               />

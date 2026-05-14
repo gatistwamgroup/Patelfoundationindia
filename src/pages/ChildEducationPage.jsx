@@ -15,7 +15,7 @@ const ChildEducationPage = () => {
       description="Patel Foundation supports underprivileged children through quality education initiatives, school support, learning resources, and opportunities that build brighter futures."
       keywords="child education NGO, child education support, NGO for children education, sponsor education, education charity India"
       url="https://mypatelfoundation.in/child-education"
-      image="https://mypatelfoundation.in/og-image.jpg"
+      image="https://mypatelfoundation.in/og-image.webp"
     />
       <PageHero
         badge="Child Education"
@@ -26,7 +26,7 @@ const ChildEducationPage = () => {
         primaryBtnHref="/donate"
         secondaryBtnText="Contact Us"
         secondaryBtnHref="/contact"
-        image="/images/education/education-hero.jpg"
+        image="/images/education/education-hero.webp"
       />
 
       <EducationIntroSection />

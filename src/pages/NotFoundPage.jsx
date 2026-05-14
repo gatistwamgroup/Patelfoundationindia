@@ -14,7 +14,7 @@ const NotFoundPage = () => {
   description="The page you are looking for could not be found. Explore Patel Foundation’s initiatives, volunteer opportunities, and donation programs."
   keywords="404 page, page not found, Patel Foundation"
   url="https://mypatelfoundation.in/404"
-  image="https://mypatelfoundation.in/og-image.jpg"
+  image="https://mypatelfoundation.in/og-image.webp"
 />
     <main className="notfound-page">
       <section className="notfound-hero">

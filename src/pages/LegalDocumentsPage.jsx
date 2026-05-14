@@ -12,7 +12,7 @@ const LegalDocumentsPage = () => {
       description="View Patel Foundation’s legal documents, registrations, and compliance records that reflect our commitment to transparency, trust, accountability, and ethical social service."
       keywords="Patel Foundation legal documents, NGO registration, trust documents, charity compliance, NGO transparency"
       url="https://mypatelfoundation.in/legal-documents"
-      image="https://mypatelfoundation.in/og-image.jpg"
+      image="https://mypatelfoundation.in/og-image.webp"
     />
       <PageHero
         badge="Legal Documents"
@@ -23,7 +23,7 @@ const LegalDocumentsPage = () => {
         primaryBtnHref="#legal-documents"
         secondaryBtnText="Contact Us"
         secondaryBtnHref="/contact"
-        image="/images/legal/legal-hero.jpg"
+        image="/images/legal/legal-hero.webp"
       />
 
       <div id="legal-documents">

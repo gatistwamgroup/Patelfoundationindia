@@ -4,7 +4,7 @@ export const whoWeAreData = {
   highlight: "lasting community change",
   description:
     "Patel Foundation exists to create meaningful opportunities for children and families through education support, humanitarian outreach, and purpose-driven community initiatives that inspire hope and dignity.",
-  image: "/images/home/who-we-are.jpg",
+  image: "/images/home/who-we-are.webp",
   points: [
     "Purpose-led nonprofit focused on long-term impact",
     "Built on compassion, trust, and community collaboration",
@@ -26,7 +26,7 @@ export const whatWeDoData = [
     title: "Education Support",
     description:
       "Providing school kits, learning materials, and access to educational essentials that empower children to grow with confidence.",
-    image: "/images/home/service-1.jpg",
+    image: "/images/home/service-1.webp",
     cta: "Support Education",
     href: "/child-education",
   },
@@ -35,7 +35,7 @@ export const whatWeDoData = [
     title: "Community Outreach",
     description:
       "Organizing local support drives, family care initiatives, and outreach programs that strengthen communities with compassion.",
-    image: "/images/home/service-2.jpg",
+    image: "/images/home/service-2.webp",
     cta: "View Programs",
     href: "/social-activity",
   },
@@ -44,7 +44,7 @@ export const whatWeDoData = [
     title: "Volunteer Engagement",
     description:
       "Bringing together passionate supporters and volunteers to create real-world impact through action, empathy, and service.",
-    image: "/images/home/service-3.jpg",
+    image: "/images/home/service-3.webp",
     cta: "Join as Volunteer",
     href: "/volunteer",
   },
@@ -62,13 +62,13 @@ export const missionVisionData = {
     title: "Our Mission",
     description:
       "To uplift children and communities through compassionate action, education access, and meaningful support systems that create lasting opportunity and dignity.",
-    image: "/images/home/mission.jpg",
+    image: "/images/home/mission.webp",
   },
   vision: {
     title: "Our Vision",
     description:
       "To build a future where every child has the resources, encouragement, and opportunities needed to thrive in a stronger, more connected world.",
-    image: "/images/home/vision.jpg",
+    image: "/images/home/vision.webp",
   },
 };
 
@@ -96,32 +96,32 @@ export const trustData = [
 export const galleryImages = [
   {
     id: 1,
-    src: "/images/gallery/gallery-1.jpg",
+    src: "/images/gallery/gallery-1.webp",
     title: "Education Support Drive",
   },
   {
     id: 2,
-    src: "/images/gallery/gallery-2.jpg",
+    src: "/images/gallery/gallery-2.webp",
     title: "Community Outreach Event",
   },
   {
     id: 3,
-    src: "/images/gallery/gallery-3.jpg",
+    src: "/images/gallery/gallery-3.webp",
     title: "Volunteer Program",
   },
   {
     id: 4,
-    src: "/images/gallery/gallery-4.jpg",
+    src: "/images/gallery/gallery-4.webp",
     title: "School Kit Distribution",
   },
   {
     id: 5,
-    src: "/images/gallery/gallery-5.jpg",
+    src: "/images/gallery/gallery-5.webp",
     title: "Children Learning Together",
   },
   {
     id: 6,
-    src: "/images/gallery/gallery-6.jpg",
+    src: "/images/gallery/gallery-6.webp",
     title: "Support with Compassion",
   },
 ];
@@ -131,7 +131,7 @@ export const teamData = [
     id: 1,
     name: "Monika Patel",
     role: "Founder & Community Lead",
-    image: "/images/team/team-1.jpg",
+    image: "/images/team/monica.webp",
     shortBio:
       "A passionate leader dedicated to creating educational opportunities and uplifting underserved communities with purpose and compassion.",
   },
@@ -139,7 +139,7 @@ export const teamData = [
     id: 2,
     name: "Jignesh Patel",
     role: "President",
-    image: "/images/team/team-2.jpg",
+    image: "/images/team/team-2.webp",
     shortBio:
       "Focused on planning outreach initiatives, coordinating volunteers, and ensuring impactful execution across community programs.",
   },
@@ -147,7 +147,7 @@ export const teamData = [
     id: 3,
     name: "Shreya Patel",
     role: "Secretary",
-    image: "/images/team/team-3.jpg",
+    image: "/images/team/team-3.webp",
     shortBio:
       "Works closely with volunteers and supporters to strengthen on-ground efforts and expand the reach of community support.",
   },
@@ -158,7 +158,7 @@ export const donationCTAData = {
   title: "Your generosity can change a life.",
   description:
     "Every donation helps us provide education support, community outreach, and compassionate care where it matters most.",
-  image: "/images/home/donation-cta.jpg",
+  image: "/images/home/donation-cta.webp",
   primaryBtn: {
     text: "Donate Now",
     href: "/donate",

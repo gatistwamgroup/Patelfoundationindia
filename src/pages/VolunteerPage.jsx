@@ -13,7 +13,7 @@ const VolunteerPage = () => {
         description="Join Patel Foundation as a volunteer and become part of meaningful social change through education, health, nutrition, and community service initiatives."
         keywords="volunteer NGO, volunteer with Patel Foundation, NGO volunteer India, social work volunteer, charity volunteer"
         url="https://mypatelfoundation.in/volunteer"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Become a Volunteer"
@@ -24,7 +24,7 @@ const VolunteerPage = () => {
         primaryBtnHref="/volunteer"
         secondaryBtnText="Contact Us"
         secondaryBtnHref="/contact"
-        image="/images/volunteer/volunteer-hero.jpg"
+        image="/images/volunteer/volunteer-hero.webp"
       />
 
       <VolunteerIntroSection />

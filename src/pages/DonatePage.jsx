@@ -11,7 +11,7 @@ const DonationPage = () => {
         description="Support Patel Foundation by donating to help children receive education, nutrition, healthcare, and opportunities for a brighter future. Every contribution creates real impact."
         keywords="donate NGO, donate to Patel Foundation, child sponsorship, support children charity, NGO donation India"
         url="https://mypatelfoundation.in/donate"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <DonationFormSection />
       {/* <DonationIntroSection /> */}

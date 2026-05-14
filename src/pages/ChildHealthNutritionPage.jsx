@@ -15,7 +15,7 @@ const ChildHealthNutritionPage = () => {
         description="Explore Patel Foundation’s child health and nutrition initiatives focused on providing essential care, nourishment, wellness support, and a healthier future for children in need."
         keywords="child health NGO, child nutrition NGO, health support for children, nutrition charity, child welfare programs"
         url="https://mypatelfoundation.in/child-health-nutrition"
-        image="https://mypatelfoundation.in/og-image.jpg"
+        image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Child Health & Nutrition"
@@ -26,7 +26,7 @@ const ChildHealthNutritionPage = () => {
         primaryBtnHref="/donate"
         secondaryBtnText="Contact Us"
         secondaryBtnHref="/contact"
-        image="/images/health/health-hero.jpg"
+        image="/images/health/health-hero.webp"
       />
 
       <HealthIntroSection />

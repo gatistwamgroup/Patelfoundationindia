@@ -18,7 +18,7 @@ const AboutPage = () => {
       description="Learn about Patel Foundation’s mission, vision, values, and the work we do to support children and communities through education, healthcare, nutrition, and social welfare initiatives."
       keywords="About Patel Foundation, NGO mission, NGO vision, child welfare foundation, social impact NGO, charity organization India"
       url="https://mypatelfoundation.in/about"
-      image="https://mypatelfoundation.in/og-image.jpg"
+      image="https://mypatelfoundation.in/og-image.webp"
       />
       <PageHero
         badge="Who We Are"
@@ -29,7 +29,7 @@ const AboutPage = () => {
         primaryBtnHref="/donate"
         secondaryBtnText="Meet Our Team"
         secondaryBtnHref="/team"
-        image="/images/about/about-hero.jpg"
+        image="/images/about/about-hero.webp"
       />
 
       <AboutIntroSection />

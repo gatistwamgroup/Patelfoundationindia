@@ -12,7 +12,7 @@ const EducationIntroSection = () => {
           <div className="education-intro-visual">
             <div className="education-intro-image-shell">
               <img
-                src="/images/education/education-intro.jpg"
+                src="/images/education/education-intro.webp"
                 alt="Child Education Support"
                 className="education-intro-image"
               />

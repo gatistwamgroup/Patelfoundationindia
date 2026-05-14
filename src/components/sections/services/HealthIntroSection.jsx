@@ -11,7 +11,7 @@ const HealthIntroSection = () => {
           <div className="health-intro-visual">
             <div className="health-image-shell">
               <img
-                src="/images/health/health-intro.jpg"
+                src="/images/health/health-intro.webp"
                 alt="Child Health and Nutrition Support"
                 className="health-main-image"
               />

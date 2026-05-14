@@ -3,7 +3,7 @@ export const teamMembers = [
     id: 1,
     name: "Monika Patel",
     role: "Founder",
-    image: "/images/team/team-1.jpg",
+    image: "/images/team/Monica.webp",
     shortBio:
       "Leading Patel Foundation from New Jersey, USA with a mission rooted in compassion, trust, and cross-border community impact.",
     fullBio:
@@ -15,7 +15,7 @@ export const teamMembers = [
     id: 2,
     name: "Jignesh Patel",
     role: "President",
-    image: "/images/team/team-2.jpg",
+    image: "/images/team/team-2.webp",
     shortBio:
       "Supports planning and coordination of child-focused initiatives, outreach efforts, and community-centered programs.",
     fullBio:
@@ -27,7 +27,7 @@ export const teamMembers = [
     id: 3,
     name: "Shreya Patel",
     role: "Secretary",
-    image: "/images/team/team-3.jpg",
+    image: "/images/team/team-3.webp",
     shortBio:
       "Helps strengthen relationships with supporters and communities to ensure meaningful, needs-based social impact.",
     fullBio:
@@ -39,7 +39,7 @@ export const teamMembers = [
     id: 4,
     name: "Parth Patel",
     role: "Treasurer",
-    image: "/images/team/team-4.jpg",
+    image: "/images/team/team-4.webp",
     shortBio:
       "Focused on volunteer coordination, engagement support, and building stronger participation across community initiatives.",
     fullBio:
@@ -51,7 +51,7 @@ export const teamMembers = [
     id: 5,
     name: "Deepak Mecwan",
     role: "Treasurer",
-    image: "/images/team/team-5.jpg",
+    image: "/images/team/team-5.webp",
     shortBio:
       "Assists with day-to-day support and organizational coordination to help programs run smoothly and efficiently.",
     fullBio:
@@ -63,7 +63,7 @@ export const teamMembers = [
     id: 6,
     name: "Hiral Mecwan",
     role: "Treasurer",
-    image: "/images/team/team-6.jpg",
+    image: "/images/team/team-6.webp",
     shortBio:
       "Supports awareness efforts and campaign execution to help expand outreach and encourage community participation.",
     fullBio:
@@ -75,7 +75,7 @@ export const teamMembers = [
     id: 7,
     name: "Sejal Panchal",
     role: "Treasurer",
-    image: "/images/team/team-7.jpg",
+    image: "/images/team/team-7.webp",
     shortBio:
       "Supports awareness efforts and campaign execution to help expand outreach and encourage community participation.",
     fullBio:
