@@ -1,5 +1,5 @@
 import React from "react";
-import { FiArrowUpRight, FiCopy, FiCheckCircle } from "react-icons/fi";
+import { FiArrowUpRight, FiCopy, FiCheckCircle, FiLoader } from "react-icons/fi";
 import DonorDetailsForm from "./DonorDetailsForm";
 import AmountSelector from "./AmountSelector";
 
@@ -19,7 +19,13 @@ const IndiaPaymentForm = ({
   onSubmit,
 }) => {
   return (
-    <div className="donation-form-card upgraded-card">
+    <div className={`donation-form-card upgraded-card ${loading ? "is-loading" : ""}`}>
+      {loading && (
+        <div className="form-loading-overlay">
+          <div className="premium-spinner"></div>
+          <p>Verifying submission...</p>
+        </div>
+      )}
       <div className="donation-card-top">
         <div className="donation-method-pill donation-method-pill-india">India Donations</div>
         <h3 className="donation-card-title">Bank Transfer / QR Payment</h3>
@@ -169,8 +175,16 @@ const IndiaPaymentForm = ({
           </label>
         </div>
 
-        <button type="submit" className="donation-submit-btn" disabled={loading}>
-          {loading ? "Submitting..." : "Submit Confirmation"} <FiArrowUpRight />
+        <button type="submit" className="donation-submit-btn donation-submit-btn-india" disabled={loading}>
+          {loading ? (
+            <>
+              <FiLoader className="icon-spin" /> Submitting...
+            </>
+          ) : (
+            <>
+              Submit Confirmation <FiArrowUpRight />
+            </>
+          )}
         </button>
       </form>
     </div>

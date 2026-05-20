@@ -1,5 +1,5 @@
 import React from "react";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiLoader } from "react-icons/fi";
 import DonorDetailsForm from "./DonorDetailsForm";
 import AmountSelector from "./AmountSelector";
 
@@ -16,7 +16,13 @@ const PayPalForm = ({
   onSubmit,
 }) => {
   return (
-    <div className="donation-form-card upgraded-card">
+    <div className={`donation-form-card upgraded-card ${loading ? "is-loading" : ""}`}>
+      {loading && (
+        <div className="form-loading-overlay">
+          <div className="premium-spinner"></div>
+          <p>Connecting to PayPal...</p>
+        </div>
+      )}
       <div className="donation-card-top">
         <div className="donation-method-pill">International Donations</div>
         <h3 className="donation-card-title">Donate via PayPal</h3>
@@ -79,7 +85,15 @@ const PayPalForm = ({
         </div>
 
         <button type="submit" className="donation-submit-btn" disabled={loading}>
-          {loading ? "Processing..." : "Proceed to PayPal"} <FiArrowUpRight />
+          {loading ? (
+            <>
+              <FiLoader className="icon-spin" /> Processing...
+            </>
+          ) : (
+            <>
+              Proceed to PayPal <FiArrowUpRight />
+            </>
+          )}
         </button>
       </form>
     </div>

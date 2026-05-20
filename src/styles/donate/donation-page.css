@@ -716,4 +716,67 @@
             grid-template-columns: 1fr;
           }
         }
-    
+        
+/* Form Loading Overlay */
+.donation-form-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-form-card.is-loading form {
+  opacity: 0.5;
+  pointer-events: none;
+  filter: blur(2px);
+  transition: all 0.3s ease;
+}
+
+.form-loading-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  animation: fadeIn 0.3s ease forwards;
+  border-radius: inherit;
+}
+
+.premium-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(215, 38, 56, 0.1);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.form-loading-overlay p {
+  font-weight: 700;
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  margin: 0;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.icon-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
