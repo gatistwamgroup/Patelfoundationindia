@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Optional: block admin/private folders if future me ho
+# Disallow: /admin/
+# Disallow: /dashboard/
+# Disallow: /api/
+
+Sitemap: https://mypatelfoundation.in/sitemap.xml

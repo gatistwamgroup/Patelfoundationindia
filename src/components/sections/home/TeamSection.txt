@@ -1,0 +1,305 @@
+import { useState } from "react";
+import { FiX, FiArrowUpRight } from "react-icons/fi";
+import Container from "../../common/Container";
+import PremiumButton from "../../common/PremiumButton";
+import { teamData } from "../../../data/homePageData";
+
+const TeamSection = () => {
+  const [selectedMember, setSelectedMember] = useState(null);
+
+  return (
+    <section className="section">
+      <Container>
+        <div style={{ textAlign: "center", marginBottom: "clamp(2rem, 4vw, 4rem)" }}>
+          <div className="section-badge" style={{ marginInline: "auto" }}>
+            Meet Our Team
+          </div>
+
+          <h2
+            style={{
+              fontSize: "clamp(2.2rem, 5vw, 3rem)",
+              marginBottom: "1rem",
+              maxWidth: "860px",
+              marginInline: "auto",
+            }}
+          >
+            The people behind our purpose and <span className="text-gradient">community impact.</span>
+          </h2>
+
+          <p
+            style={{
+              maxWidth: "760px",
+              margin: "0 auto 1.4rem",
+              fontSize: "clamp(1rem, 2vw, 1.1rem)",
+            }}
+          >
+            Meet the dedicated individuals who bring compassion, leadership, and action to every initiative we undertake.
+          </p>
+
+          <PremiumButton href="#contact" variant="secondary">
+            Join Our Team
+          </PremiumButton>
+        </div>
+
+        <div className="team-grid">
+          {teamData.map((member) => (
+            <div key={member.id} className="team-card">
+              <div className="team-image-wrap">
+                <img src={member.image} alt={member.name} className="team-image" />
+              </div>
+
+              <div className="team-content">
+                <h3 className="team-name">{member.name}</h3>
+                <p className="team-role">{member.role}</p>
+
+                <button
+                  className="team-view-btn"
+                  onClick={() => setSelectedMember(member)}
+                >
+                  View Profile <FiArrowUpRight />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Team Modal */}
+        {selectedMember && (
+          <div className="team-modal-backdrop" onClick={() => setSelectedMember(null)}>
+            <div
+              className="team-modal"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="team-modal-close"
+                onClick={() => setSelectedMember(null)}
+                aria-label="Close team modal"
+              >
+                <FiX />
+              </button>
+
+              <div className="team-modal-grid">
+                <div className="team-modal-image-wrap">
+                  <img
+                    src={selectedMember.image}
+                    alt={selectedMember.name}
+                    className="team-modal-image"
+                  />
+                </div>
+
+                <div className="team-modal-content">
+                  <div className="team-modal-badge">Team Profile</div>
+                  <h3 className="team-modal-name">{selectedMember.name}</h3>
+                  <p className="team-modal-role">{selectedMember.role}</p>
+                  <p className="team-modal-bio">{selectedMember.shortBio}</p>
+
+                  <div className="team-modal-actions">
+                    <PremiumButton href="#contact">Connect With Us</PremiumButton>
+                    <PremiumButton href="#donate" variant="secondary">
+                      Support the Team
+                    </PremiumButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </Container>
+
+      <style>{`
+        .team-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+        }
+
+        .team-card {
+          background: var(--color-surface);
+          border: 1px solid var(--color-border);
+          border-radius: var(--radius-xl);
+          overflow: hidden;
+          box-shadow: var(--shadow-card);
+          transition: var(--transition-base);
+        }
+
+        .team-card:hover {
+          transform: translateY(-8px);
+          box-shadow: var(--shadow-premium);
+        }
+
+        .team-image-wrap {
+          overflow: hidden;
+        }
+
+        .team-image {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          transition: var(--transition-slow);
+        }
+
+        .team-card:hover .team-image {
+          transform: scale(1.05);
+        }
+
+        .team-content {
+          padding: 1.4rem;
+        }
+
+        .team-name {
+          font-size: 1.7rem;
+          margin-bottom: 0.35rem;
+        }
+
+        .team-role {
+          color: var(--color-primary);
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        .team-view-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.45rem;
+          padding: 0.8rem 1rem;
+          border-radius: 999px;
+          background: rgba(215, 38, 56, 0.08);
+          color: var(--color-primary);
+          font-weight: 700;
+          border: 1px solid rgba(215, 38, 56, 0.12);
+        }
+
+        .team-modal-backdrop {
+          position: fixed;
+          inset: 0;
+          z-index: 1600;
+          background: rgba(17,24,39,0.82);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          display: grid;
+          place-items: center;
+          padding: 1rem;
+        }
+
+        .team-modal {
+          position: relative;
+          width: min(100%, 1050px);
+          background: #fff;
+          border-radius: 28px;
+          overflow: hidden;
+          box-shadow: 0 30px 80px rgba(0,0,0,0.28);
+        }
+
+        .team-modal-close {
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 1px solid rgba(17,24,39,0.08);
+          background: rgba(255,255,255,0.92);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 3;
+        }
+
+        .team-modal-grid {
+          display: grid;
+          grid-template-columns: 0.9fr 1.1fr;
+        }
+
+        .team-modal-image-wrap {
+          background: var(--color-surface-soft);
+        }
+
+        .team-modal-image {
+          width: 100%;
+          height: 100%;
+          min-height: 520px;
+          object-fit: cover;
+        }
+
+        .team-modal-content {
+          padding: clamp(1.5rem, 4vw, 3rem);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .team-modal-badge {
+          display: inline-block;
+          padding: 0.55rem 0.9rem;
+          border-radius: 999px;
+          background: rgba(215, 38, 56, 0.08);
+          color: var(--color-primary);
+          font-size: 0.8rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        .team-modal-name {
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          margin-bottom: 0.5rem;
+        }
+
+        .team-modal-role {
+          color: var(--color-primary);
+          font-weight: 700;
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .team-modal-bio {
+          line-height: 1.9;
+          margin-bottom: 1.5rem;
+        }
+
+        .team-modal-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+
+        @media (max-width: 1100px) {
+          .team-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        @media (max-width: 900px) {
+          .team-modal-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .team-modal-image {
+            min-height: 320px;
+            max-height: 360px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .team-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .team-image {
+            height: 280px;
+          }
+
+          .team-modal-actions {
+            flex-direction: column;
+          }
+
+          .team-modal-actions a {
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      `}</style>
+    </section>
+  );
+};
+
+export default TeamSection;

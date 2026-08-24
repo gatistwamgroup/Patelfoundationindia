@@ -1,0 +1,139 @@
+.education-donation-cta-section {
+  position: relative;
+  padding: clamp(4rem, 7vw, 6rem) 0 clamp(5rem, 8vw, 7rem);
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 30%),
+    radial-gradient(circle at left bottom, rgba(200, 169, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.education-donation-cta-shell {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: center;
+  padding: clamp(1.3rem, 3vw, 1.8rem);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 35%),
+    radial-gradient(circle at left center, rgba(200, 169, 107, 0.08), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(248,250,252,0.96) 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-premium);
+}
+
+.education-donation-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(215, 38, 56, 0.08);
+  border: 1px solid rgba(215, 38, 56, 0.12);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.education-donation-cta-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.education-donation-cta-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.education-donation-cta-description {
+  margin: 0 0 1.2rem;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.education-donation-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education-donation-cta-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.education-donation-cta-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1rem;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.education-donation-cta-icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.education-donation-cta-icon.primary {
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+}
+
+.education-donation-cta-icon.gold {
+  background: rgba(200, 169, 107, 0.14);
+  color: var(--color-gold);
+}
+
+.education-donation-cta-label {
+  margin: 0 0 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+.education-donation-cta-card-title {
+  margin: 0;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--color-dark);
+  line-height: 1.45;
+}
+
+@media (max-width: 992px) {
+  .education-donation-cta-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-donation-cta-section {
+    padding: clamp(3rem, 6vw, 4rem) 0 clamp(4rem, 7vw, 5rem);
+  }
+
+  .education-donation-cta-actions {
+    flex-direction: column;
+  }
+
+  .education-donation-cta-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}

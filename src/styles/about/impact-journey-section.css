@@ -1,0 +1,318 @@
+.impact-journey-section {
+  position: relative;
+  padding: clamp(0rem, 7vw, 4rem) 0;
+  background:
+    radial-gradient(circle at top left, rgba(215, 38, 56, 0.05), transparent 30%),
+    radial-gradient(circle at right center, rgba(200, 169, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.impact-journey-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+}
+
+.impact-journey-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(215, 38, 56, 0.08);
+  border: 1px solid rgba(215, 38, 56, 0.12);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.impact-journey-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.impact-journey-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.impact-journey-subtitle {
+  margin: 0 auto;
+  max-width: 760px;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.impact-journey-flow-wrap {
+  position: relative;
+  margin-bottom: clamp(1.8rem, 3vw, 2.2rem);
+}
+
+.impact-journey-line {
+  position: absolute;
+  top: 86px;
+  left: 6%;
+  right: 6%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(215, 38, 56, 0.15) 0%,
+    rgba(200, 169, 107, 0.25) 50%,
+    rgba(17, 24, 39, 0.12) 100%
+  );
+  z-index: 0;
+}
+
+.impact-journey-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.impact-journey-card {
+  position: relative;
+  padding: 1.25rem 1rem;
+  border-radius: 28px;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.impact-journey-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.10);
+}
+
+.impact-journey-card.primary {
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.06), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #fff8f9 100%);
+}
+
+.impact-journey-card.gold {
+  background:
+    radial-gradient(circle at top right, rgba(200, 169, 107, 0.08), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #fffaf3 100%);
+}
+
+.impact-journey-card.teal {
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.07), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #f4fbfa 100%);
+}
+
+.impact-journey-card.dark {
+  background:
+    radial-gradient(circle at top right, rgba(17, 24, 39, 0.05), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.impact-journey-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 32px;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.06);
+  color: var(--color-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.impact-journey-icon {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  margin: 0 auto 1rem;
+}
+
+.impact-journey-icon.primary {
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+}
+
+.impact-journey-icon.gold {
+  background: rgba(200, 169, 107, 0.14);
+  color: var(--color-gold);
+}
+
+.impact-journey-icon.teal {
+  background: rgba(15, 118, 110, 0.08);
+  color: #0f766e;
+}
+
+.impact-journey-icon.dark {
+  background: rgba(17, 24, 39, 0.08);
+  color: var(--color-dark);
+}
+
+.impact-journey-card-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.08rem;
+  color: var(--color-dark);
+  line-height: 1.25;
+  letter-spacing: 1px;
+}
+
+.impact-journey-card-description {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.impact-journey-mobile-connector {
+  display: none;
+}
+
+.impact-journey-highlight {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+  align-items: center;
+  padding: clamp(1.3rem, 3vw, 1.8rem);
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(215, 38, 56, 0.05) 0%, rgba(200, 169, 107, 0.08) 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-premium);
+}
+
+.impact-journey-highlight-mini {
+  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.9rem;
+}
+
+.impact-journey-highlight-title {
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.25;
+  color: var(--color-dark);
+  letter-spacing: 0.8px;
+}
+
+.impact-journey-highlight-text {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.impact-journey-highlight-right {
+  display: grid;
+  gap: 1rem;
+}
+
+.impact-journey-metric-card {
+  padding: 1rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow-soft);
+}
+
+.impact-journey-metric-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.impact-journey-metric-value {
+  margin: 0;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  color: var(--color-dark);
+  line-height: 1.2;
+}
+
+.impact-journey-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+@media (max-width: 1200px) {
+  .impact-journey-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .impact-journey-line {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .impact-journey-highlight {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-journey-section {
+    padding: clamp(0rem, 7vw, 2rem) 0;
+  }
+
+  .impact-journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-journey-card {
+    text-align: left;
+  }
+
+  .impact-journey-icon {
+    margin: 0 0 1rem;
+  }
+
+  .impact-journey-mobile-connector {
+    display: block;
+    width: 2px;
+    height: 28px;
+    background: rgba(17, 24, 39, 0.08);
+    margin: 1rem auto 0;
+  }
+
+  .impact-journey-actions {
+    flex-direction: column;
+  }
+
+  .impact-journey-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}

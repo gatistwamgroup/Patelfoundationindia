@@ -1,0 +1,203 @@
+.about-final-cta-section {
+  position: relative;
+  padding: clamp(4rem, 7vw, 6rem) 0 clamp(5rem, 8vw, 7rem);
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 30%),
+    radial-gradient(circle at left bottom, rgba(200, 169, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.about-final-cta-shell {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: start;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.05), transparent 35%),
+    radial-gradient(circle at left center, rgba(200, 169, 107, 0.08), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(248,250,252,0.96) 100%);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-premium);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.about-final-cta-content {
+  max-width: 720px;
+}
+
+.about-final-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(215, 38, 56, 0.08);
+  border: 1px solid rgba(215, 38, 56, 0.12);
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-final-cta-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.about-final-cta-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+  margin: 0 0 1rem;
+}
+
+.about-final-cta-description {
+  margin: 0 0 1rem;
+  color: var(--color-text);
+  font-size: clamp(1rem, 1.8vw, 1.05rem);
+  line-height: 1.9;
+}
+
+.about-final-cta-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-final-cta-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.1rem;
+  border-radius: 24px;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-final-cta-info-card.primary {
+  background:
+    radial-gradient(circle at top right, rgba(215, 38, 56, 0.06), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #fff8f9 100%);
+}
+
+.about-final-cta-info-card.gold {
+  background:
+    radial-gradient(circle at top right, rgba(200, 169, 107, 0.08), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #fffaf3 100%);
+}
+
+.about-final-cta-info-icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.about-final-cta-info-icon.primary {
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+}
+
+.about-final-cta-info-icon.gold {
+  background: rgba(200, 169, 107, 0.14);
+  color: var(--color-gold);
+}
+
+.about-final-cta-info-label {
+  margin: 0 0 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+.about-final-cta-info-title {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--color-dark);
+  line-height: 1.35;
+}
+
+.about-final-cta-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.about-final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-final-cta-trust {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  max-width: 520px;
+}
+
+.about-final-cta-trust-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 16px;
+  background: rgba(215, 38, 56, 0.08);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.about-final-cta-trust p {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .about-final-cta-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-final-cta-section {
+    padding: clamp(3rem, 6vw, 4rem) 0 clamp(4rem, 7vw, 5rem);
+  }
+
+  .about-final-cta-shell {
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  .about-final-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-final-cta-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
