@@ -71,4 +71,16 @@ export const teamMembers = [
     location: "Child Education",
     featured: false,
   },
+  {
+    id: 9,
+    name: "Rupalben Raval",
+    role: "Teacher",
+    image: "/images/team/team-6.webp",
+    shortBio:
+      "Dedicated teacher who works directly with children, helping them learn, grow, and build confidence through quality education.",
+    fullBio:
+      "Rupalben Raval is a teacher at Patel Foundation who teaches and guides the children supported by the foundation. Through patient, caring, and hands-on teaching, she helps students build strong learning foundations, develop confidence, and look ahead to a brighter future. Her daily presence in the classroom reflects the foundation's commitment to education as a path to long-term change.",
+    location: "Child Education",
+    featured: false,
+  },
 ];
