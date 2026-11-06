@@ -48,30 +48,6 @@ export const teamMembers = [
     featured: false,
   },
   {
-    id: 5,
-    name: "Deepak Mecwan",
-    role: "Treasurer",
-    image: "/images/team/team-5.webp",
-    shortBio:
-      "Assists with day-to-day support and organizational coordination to help programs run smoothly and efficiently.",
-    fullBio:
-      "Deepak Mecwan contributes to the operational rhythm of Patel Foundation by supporting internal coordination, logistics, and organizational flow. Her role helps ensure that ongoing initiatives remain efficient, dependable, and aligned with the foundation’s service standards.",
-    location: "Operations Support",
-    featured: false,
-  },
-  {
-    id: 6,
-    name: "Hiral Mecwan",
-    role: "Treasurer",
-    image: "/images/team/team-6.webp",
-    shortBio:
-      "Supports awareness efforts and campaign execution to help expand outreach and encourage community participation.",
-    fullBio:
-      "Hiral Mecwan supports campaigns, awareness initiatives, and mission communication. He helps strengthen outreach visibility and encourages broader participation in the foundation’s work, contributing to a stronger community presence and mission awareness.",
-    location: "Campaign Support",
-    featured: false,
-  },
-  {
     id: 7,
     name: "Sejal Panchal",
     role: "Treasurer",
@@ -81,6 +57,18 @@ export const teamMembers = [
     fullBio:
       "Sejal Panchal supports campaigns, awareness initiatives, and mission communication. He helps strengthen outreach visibility and encourages broader participation in the foundation’s work, contributing to a stronger community presence and mission awareness.",
     location: "Campaign Support",
+    featured: false,
+  },
+  {
+    id: 8,
+    name: "Pruthviraj Ashokbhai Rathod",
+    role: "Teacher",
+    image: "/images/team/team-5.webp",
+    shortBio:
+      "Dedicated teacher who works directly with children, helping them learn, grow, and build confidence through quality education.",
+    fullBio:
+      "Pruthviraj Ashokbhai Rathod is a teacher at Patel Foundation who teaches and guides the children supported by the foundation. Through patient, hands-on teaching, he helps students build strong learning foundations, develop confidence, and look ahead to a brighter future. His daily presence in the classroom reflects the foundation's commitment to education as a path to long-term change.",
+    location: "Child Education",
     featured: false,
   },
 ];
