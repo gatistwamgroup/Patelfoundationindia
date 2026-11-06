@@ -61,7 +61,7 @@ export const teamMembers = [
   },
   {
     id: 8,
-    name: "Pruthviraj Ashokbhai Rathod",
+    name: "Pruthviraj Rathod",
     role: "Teacher",
     image: "/images/team/team-5.webp",
     shortBio:
